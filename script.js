@@ -35,6 +35,13 @@ const quizData = [
         question: "Which HTML tag is used to create an ordered list?",
         options: ["<ul>", "<li>", "<ol>", "<dl>"],
         correct: 2,
-    }
+    },
 
-]
+];
+
+const answerElm = document.querySelectorAll(".answer")
+const [questionElm, option_1, option_2, option_3, option_4] = document.querySelectorAll(
+    "#question, .option_1, .option_2, .option_3, .option_4"
+)
+
+const submitBtn = document.querySelector("#submit")
